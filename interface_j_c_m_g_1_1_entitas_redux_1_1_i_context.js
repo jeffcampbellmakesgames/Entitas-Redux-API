@@ -1,0 +1,25 @@
+var interface_j_c_m_g_1_1_entitas_redux_1_1_i_context =
+[
+    [ "AddEntityIndex", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#aa7c2ea050c8d06cbf917e509331339de", null ],
+    [ "ClearComponentPool", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#a85738e80f3c2f7164fe22a54264abbbf", null ],
+    [ "ClearComponentPools", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#a98890761c840b3a9c9ea4c10c2d136c8", null ],
+    [ "CreateEntity", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#a190aaacee342befbc9f90299426a5f65", null ],
+    [ "DestroyAllEntities", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#ae9f91a5551c635694ef1574a71831bcb", null ],
+    [ "GetEntities", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#ad598d6ea542bfac758ce548d52f92867", null ],
+    [ "GetEntityIndex", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#ae9b18c2b9735d585482fe2769f4813b9", null ],
+    [ "GetGroup", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#addb368ddaa76fd8eb29eb1abb829edc0", null ],
+    [ "HasEntity", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#ade8232b4288706e065ec48ca1b89d86f", null ],
+    [ "RemoveAllEventHandlers", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#a4999b50c8c44008da98ebb5b34e8bf0f", null ],
+    [ "Reset", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#ada37f902c1617e8086f640ad89b60906", null ],
+    [ "ResetCreationIndex", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#ab696dde024ba6ddae4fc4cac992d4bd7", null ],
+    [ "ComponentPools", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#a05593181046726d7e11b19fccf21475f", null ],
+    [ "ContextInfo", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#a0808b1e363378c44f7b1e2e5065ea836", null ],
+    [ "Count", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#ad2093427a15e1236a7e4aa5be3b0793f", null ],
+    [ "RetainedEntitiesCount", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#adf5c79055c58c8c18431145032be5679", null ],
+    [ "ReusableEntitiesCount", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#a2b946cdd5b86cbc07b96ba4a5cf954cc", null ],
+    [ "TotalComponents", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#a63436f8f38ff462044989e6a3de8225a", null ],
+    [ "OnEntityCreated", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#a666ee59b6368ddeb7aac3ccefcb8ef58", null ],
+    [ "OnEntityDestroyed", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#aa2dc099fb45b2622f32373b53a523e50", null ],
+    [ "OnEntityWillBeDestroyed", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#ac499b4399e763a59b0dcf83555ea1447", null ],
+    [ "OnGroupCreated", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html#a1774265296b03876d7758c6706b19296", null ]
+];
