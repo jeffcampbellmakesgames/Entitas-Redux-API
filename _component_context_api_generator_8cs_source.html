@@ -128,10 +128,10 @@ $(document).ready(function(){initNavTree('_component_context_api_generator_8cs_s
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="stringliteral"></span> </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="stringliteral">    public ${EntityType} ${componentName}Entity { get { return GetGroup(${MatcherType}.${ComponentName}).GetSingleEntity(); } }</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="stringliteral">    public ${ComponentType} ${validComponentName} { get { return ${componentName}Entity.${componentName}; } }</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="stringliteral">    public bool has${ComponentName} { get { return ${componentName}Entity != null; } }</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="stringliteral">    public bool Has${ComponentName} { get { return ${componentName}Entity != null; } }</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="stringliteral"></span> </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="stringliteral">    public ${EntityType} Set${ComponentName}(${newMethodParameters}) {</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="stringliteral">        if (has${ComponentName}) {</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="stringliteral">        if (Has${ComponentName}) {</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="stringliteral">            throw new JCMG.EntitasRedux.EntitasReduxException(&quot;&quot;Could not set ${ComponentName}!\n&quot;&quot; + this + &quot;&quot; already has an entity with ${ComponentType}!&quot;&quot;,</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="stringliteral">                &quot;&quot;You should check if the context already has a ${componentName}Entity before setting it or use context.Replace${ComponentName}().&quot;&quot;);</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="stringliteral">        }</span></div>

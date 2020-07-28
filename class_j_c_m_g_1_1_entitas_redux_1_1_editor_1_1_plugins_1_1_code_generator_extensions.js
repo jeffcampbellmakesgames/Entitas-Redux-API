@@ -8,6 +8,7 @@ var class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_code_generator_ex
     [ "Event", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_code_generator_extensions.html#a8fdabba32db736865ee5f0ca74256ce7", null ],
     [ "EventComponentName", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_code_generator_extensions.html#afe5b9c5e1c9ed2839a8f6a6ad58d8c38", null ],
     [ "EventListener", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_code_generator_extensions.html#aaacde90375d0af591529e1c05422a107", null ],
+    [ "GetComponentNames", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_code_generator_extensions.html#a48a25c666adc25366d6dfc432d3ed992", null ],
     [ "GetEventMethodArgs", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_code_generator_extensions.html#a9e431f5b51266b06f224f63f47b786ea", null ],
     [ "GetEventPrefix", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_code_generator_extensions.html#a74446c45af544a72109df8b4c7aa2b8b", null ],
     [ "GetEventTypeSuffix", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_code_generator_extensions.html#a0796add328c874317e4ede46f27d94ee", null ],
