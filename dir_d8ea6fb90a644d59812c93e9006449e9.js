@@ -24,5 +24,6 @@ var dir_d8ea6fb90a644d59812c93e9006449e9 =
     [ "IComponent.cs", "_i_component_8cs.html", [
       [ "IComponent", "interface_j_c_m_g_1_1_entitas_redux_1_1_i_component.html", null ]
     ] ],
-    [ "ObjectPool.cs", "_object_pool_8cs.html", null ]
+    [ "ObjectPool.cs", "_object_pool_8cs.html", null ],
+    [ "VersionConstants.cs", "_version_constants_8cs.html", null ]
 ];

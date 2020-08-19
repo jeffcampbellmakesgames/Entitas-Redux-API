@@ -1,5 +1,11 @@
 var NAVTREEINDEX3 =
 {
+"class_j_c_m_g_1_1_entitas_redux_1_1_entity_equality_comparer.html":[1,0,0,0,27],
+"class_j_c_m_g_1_1_entitas_redux_1_1_entity_equality_comparer.html#a21e8f61b82c5ef22873253a512038074":[1,0,0,0,27,2],
+"class_j_c_m_g_1_1_entitas_redux_1_1_entity_equality_comparer.html#aa1407300b9887a726b4c25cf959405cf":[1,0,0,0,27,1],
+"class_j_c_m_g_1_1_entitas_redux_1_1_entity_equality_comparer.html#acd934831a31896d9904533efdd735413":[1,0,0,0,27,0],
+"class_j_c_m_g_1_1_entitas_redux_1_1_entity_index.html":[1,0,0,0,28],
+"class_j_c_m_g_1_1_entitas_redux_1_1_entity_index.html#a229930d643fd6bc29f06688a77ddd916":[1,0,0,0,28,2],
 "class_j_c_m_g_1_1_entitas_redux_1_1_entity_index.html#a2dd5007f321900eae37f98249c82197b":[1,0,0,0,28,5],
 "class_j_c_m_g_1_1_entitas_redux_1_1_entity_index.html#a310a75e7ac57132550d79989d5a8907b":[1,0,0,0,28,1],
 "class_j_c_m_g_1_1_entitas_redux_1_1_entity_index.html#a45c183c1e16e95a41826f162d42ed9c6":[1,0,0,0,28,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX3 =
 "class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_editor_1_1_list_type_drawer.html":[1,0,0,0,1,0,20],
 "class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_editor_1_1_list_type_drawer.html#a39b1a9c5158ffb614674425a2b276cb8":[1,0,0,0,1,0,20,1],
 "class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_editor_1_1_list_type_drawer.html#a80593a9616eae91b5eb561416003238d":[1,0,0,0,1,0,20,0],
-"class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_editor_1_1_rect_type_drawer.html":[1,0,0,0,1,0,21],
-"class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_editor_1_1_rect_type_drawer.html#a6c8153cb6daa532b563a51f20cfebad9":[1,0,0,0,1,0,21,0],
-"class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_editor_1_1_rect_type_drawer.html#a787eecb9fa3b071295c254760a785361":[1,0,0,0,1,0,21,1],
-"class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_editor_1_1_string_type_drawer.html":[1,0,0,0,1,0,22],
-"class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_editor_1_1_string_type_drawer.html#a3b573264246de71f4a1fbc02bf34bf31":[1,0,0,0,1,0,22,1],
-"class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_editor_1_1_string_type_drawer.html#aa177f688da726d3eff3016ee01a7ad9d":[1,0,0,0,1,0,22,0],
-"class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_editor_1_1_unity_object_type_drawer.html":[1,0,0,0,1,0,23]
+"class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_editor_1_1_rect_type_drawer.html":[1,0,0,0,1,0,21]
 };

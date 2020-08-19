@@ -1,5 +1,6 @@
 var namespace_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins =
 [
+    [ "Cleanup", "namespace_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_cleanup.html", null ],
     [ "AbstractGenerator", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_abstract_generator.html", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_abstract_generator" ],
     [ "CodeGeneratorExtensions", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_code_generator_extensions.html", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_code_generator_extensions" ],
     [ "ComponentData", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_component_data.html", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_component_data" ],

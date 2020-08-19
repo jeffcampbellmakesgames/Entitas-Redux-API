@@ -141,12 +141,17 @@ $(document).ready(function(){initNavTree('_flag_prefix_component_data_provider_8
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">return</span> (<span class="keywordtype">string</span>)data[COMPONENT_FLAG_PREFIX];</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> SetFlagPrefix(<span class="keyword">this</span> ComponentData data, <span class="keywordtype">string</span> prefix)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            data[COMPONENT_FLAG_PREFIX] = prefix;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> IsFlag(<span class="keyword">this</span> ComponentData data)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">return</span> data.GetMemberData().Length == 0;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> SetFlagPrefix(<span class="keyword">this</span> ComponentData data, <span class="keywordtype">string</span> prefix)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            data[COMPONENT_FLAG_PREFIX] = prefix;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_html"><div class="ttname"><a href="namespace_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins.html">JCMG.EntitasRedux.Editor.Plugins</a></div><div class="ttdef"><b>Definition:</b> <a href="_abstract_generator_8cs_source.html#l00028">AbstractGenerator.cs:29</a></div></div>
