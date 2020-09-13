@@ -110,43 +110,68 @@ $(document).ready(function(){initNavTree('_collection_extension_8cs_source.html'
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">THE SOFTWARE.</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">using</span> System.Linq;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_j_c_m_g_1_1_entitas_redux.html">JCMG.EntitasRedux</a></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html">   31</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html">CollectionExtension</a></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html#aaf1dd57969c5f962e56b44c57fbb7755">   40</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="interface_j_c_m_g_1_1_entitas_redux_1_1_i_entity.html">IEntity</a> <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html#aaf1dd57969c5f962e56b44c57fbb7755">SingleEntity</a>(<span class="keyword">this</span> ICollection&lt;IEntity&gt; collection)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">if</span> (collection.Count != 1)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_single_entity_exception.html">SingleEntityException</a>(collection.Count);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">return</span> collection.First();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html#add26f8cdbec28c7da335cea5937546f7">   58</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> TEntity <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html#add26f8cdbec28c7da335cea5937546f7">SingleEntity&lt;TEntity&gt;</a>(<span class="keyword">this</span> ICollection&lt;TEntity&gt; collection)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            where TEntity : <span class="keyword">class</span>, <a class="code" href="interface_j_c_m_g_1_1_entitas_redux_1_1_i_entity.html">IEntity</a></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">if</span> (collection.Count != 1)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_single_entity_exception.html">SingleEntityException</a>(collection.Count);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">return</span> collection.First();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">using</span> System.Linq;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_j_c_m_g_1_1_entitas_redux.html">JCMG.EntitasRedux</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html">   32</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html">CollectionExtension</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html#aaf1dd57969c5f962e56b44c57fbb7755">   41</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="interface_j_c_m_g_1_1_entitas_redux_1_1_i_entity.html">IEntity</a> <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html#aaf1dd57969c5f962e56b44c57fbb7755">SingleEntity</a>(<span class="keyword">this</span> ICollection&lt;IEntity&gt; collection)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">if</span> (collection.Count != 1)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_single_entity_exception.html">SingleEntityException</a>(collection.Count);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">return</span> collection.First();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html#add26f8cdbec28c7da335cea5937546f7">   59</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> TEntity <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html#add26f8cdbec28c7da335cea5937546f7">SingleEntity&lt;TEntity&gt;</a>(<span class="keyword">this</span> ICollection&lt;TEntity&gt; collection)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            where TEntity : <span class="keyword">class</span>, <a class="code" href="interface_j_c_m_g_1_1_entitas_redux_1_1_i_entity.html">IEntity</a></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">if</span> (collection.Count != 1)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_single_entity_exception.html">SingleEntityException</a>(collection.Count);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">return</span> collection.First();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html#a22f32dbe59d2cb7d61da472f8b857ddf">   77</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> IList&lt;T&gt; <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html#a22f32dbe59d2cb7d61da472f8b857ddf">DeepCopy&lt;T&gt;</a>(<span class="keyword">this</span> IList&lt;T&gt; list) where T : ICloneable</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            var newList = (IList&lt;T&gt;)Activator.CreateInstance(list.GetType());</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">for</span> (var i = 0; i &lt; list.Count; i++)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                newList.Add((T)list[i].Clone());</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">return</span> newList;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html#a8cc4ccce1018f9d12870b03dc0584969">   94</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> IList&lt;T&gt; <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html#a8cc4ccce1018f9d12870b03dc0584969">ShallowCopy&lt;T&gt;</a>(<span class="keyword">this</span> IList&lt;T&gt; list)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            var newList = (IList&lt;T&gt;)Activator.CreateInstance(list.GetType());</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">for</span> (var i = 0; i &lt; list.Count; i++)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                newList.Add(list[i]);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordflow">return</span> newList;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_collection_extension_html_a8cc4ccce1018f9d12870b03dc0584969"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html#a8cc4ccce1018f9d12870b03dc0584969">JCMG.EntitasRedux.CollectionExtension.ShallowCopy&lt; T &gt;</a></div><div class="ttdeci">static IList&lt; T &gt; ShallowCopy&lt; T &gt;(this IList&lt; T &gt; list)</div><div class="ttdoc">Performs a shallow copy of an IList&lt;T&gt; to a new list.</div><div class="ttdef"><b>Definition:</b> <a href="_collection_extension_8cs_source.html#l00094">CollectionExtension.cs:94</a></div></div>
 <div class="ttc" id="anamespace_j_c_m_g_1_1_entitas_redux_html"><div class="ttname"><a href="namespace_j_c_m_g_1_1_entitas_redux.html">JCMG.EntitasRedux</a></div><div class="ttdef"><b>Definition:</b> <a href="_cleanup_attribute_8cs_source.html#l00028">CleanupAttribute.cs:29</a></div></div>
 <div class="ttc" id="ainterface_j_c_m_g_1_1_entitas_redux_1_1_i_entity_html"><div class="ttname"><a href="interface_j_c_m_g_1_1_entitas_redux_1_1_i_entity.html">JCMG.EntitasRedux.IEntity</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_entity_8cs_source.html#l00031">IEntity.cs:32</a></div></div>
-<div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_collection_extension_html"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html">JCMG.EntitasRedux.CollectionExtension</a></div><div class="ttdef"><b>Definition:</b> <a href="_collection_extension_8cs_source.html#l00031">CollectionExtension.cs:32</a></div></div>
+<div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_collection_extension_html"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html">JCMG.EntitasRedux.CollectionExtension</a></div><div class="ttdef"><b>Definition:</b> <a href="_collection_extension_8cs_source.html#l00032">CollectionExtension.cs:33</a></div></div>
 <div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_single_entity_exception_html"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_single_entity_exception.html">JCMG.EntitasRedux.SingleEntityException</a></div><div class="ttdef"><b>Definition:</b> <a href="_single_entity_exception_8cs_source.html#l00028">SingleEntityException.cs:29</a></div></div>
-<div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_collection_extension_html_add26f8cdbec28c7da335cea5937546f7"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html#add26f8cdbec28c7da335cea5937546f7">JCMG.EntitasRedux.CollectionExtension.SingleEntity&lt; TEntity &gt;</a></div><div class="ttdeci">static TEntity SingleEntity&lt; TEntity &gt;(this ICollection&lt; TEntity &gt; collection)</div><div class="ttdoc">Returns the only entity in the collection. It will throw an exception if the collection doesn't have ...</div><div class="ttdef"><b>Definition:</b> <a href="_collection_extension_8cs_source.html#l00058">CollectionExtension.cs:58</a></div></div>
-<div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_collection_extension_html_aaf1dd57969c5f962e56b44c57fbb7755"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html#aaf1dd57969c5f962e56b44c57fbb7755">JCMG.EntitasRedux.CollectionExtension.SingleEntity</a></div><div class="ttdeci">static IEntity SingleEntity(this ICollection&lt; IEntity &gt; collection)</div><div class="ttdoc">Returns the only entity in the collection. It will throw an exception if the collection doesn't have ...</div><div class="ttdef"><b>Definition:</b> <a href="_collection_extension_8cs_source.html#l00040">CollectionExtension.cs:40</a></div></div>
+<div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_collection_extension_html_add26f8cdbec28c7da335cea5937546f7"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html#add26f8cdbec28c7da335cea5937546f7">JCMG.EntitasRedux.CollectionExtension.SingleEntity&lt; TEntity &gt;</a></div><div class="ttdeci">static TEntity SingleEntity&lt; TEntity &gt;(this ICollection&lt; TEntity &gt; collection)</div><div class="ttdoc">Returns the only entity in the collection. It will throw an exception if the collection doesn't have ...</div><div class="ttdef"><b>Definition:</b> <a href="_collection_extension_8cs_source.html#l00059">CollectionExtension.cs:59</a></div></div>
+<div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_collection_extension_html_aaf1dd57969c5f962e56b44c57fbb7755"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html#aaf1dd57969c5f962e56b44c57fbb7755">JCMG.EntitasRedux.CollectionExtension.SingleEntity</a></div><div class="ttdeci">static IEntity SingleEntity(this ICollection&lt; IEntity &gt; collection)</div><div class="ttdoc">Returns the only entity in the collection. It will throw an exception if the collection doesn't have ...</div><div class="ttdef"><b>Definition:</b> <a href="_collection_extension_8cs_source.html#l00041">CollectionExtension.cs:41</a></div></div>
+<div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_collection_extension_html_a22f32dbe59d2cb7d61da472f8b857ddf"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_collection_extension.html#a22f32dbe59d2cb7d61da472f8b857ddf">JCMG.EntitasRedux.CollectionExtension.DeepCopy&lt; T &gt;</a></div><div class="ttdeci">static IList&lt; T &gt; DeepCopy&lt; T &gt;(this IList&lt; T &gt; list)</div><div class="ttdoc">Performs a naive deep copy of an IList&lt;T&gt; where the deep-copy of each T  value is performed by callin...</div><div class="ttdef"><b>Definition:</b> <a href="_collection_extension_8cs_source.html#l00077">CollectionExtension.cs:77</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

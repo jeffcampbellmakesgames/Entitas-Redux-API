@@ -85,29 +85,54 @@ $(document).ready(function(){initNavTree('_color_extensions_8cs_source.html','')
 <div class="title">ColorExtensions.cs</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_color_extensions_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_j_c_m_g_1_1_entitas_redux_1_1_editor.html">JCMG.EntitasRedux.Editor</a></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_color_extensions.html">    8</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_color_extensions.html">ColorExtensions</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">string</span> HEX_COLOR_RGBA_FORMAT = <span class="stringliteral">&quot;{0:X2}{1:X2}{2:X2}{3:X2}&quot;</span>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_color_extensions.html#a3d1b3ad1dd8a139163a5d2e8f69a6bca">   15</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_color_extensions.html#a3d1b3ad1dd8a139163a5d2e8f69a6bca">ToHexWithAlpha</a>(<span class="keyword">this</span> Color c)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keywordflow">return</span> <span class="keywordtype">string</span>.Format(</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                HEX_COLOR_RGBA_FORMAT,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                (<span class="keywordtype">int</span>)(c.r * 255f),</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                (<span class="keywordtype">int</span>)(c.g * 255f),</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                (<span class="keywordtype">int</span>)(c.b * 255f),</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                (<span class="keywordtype">int</span>)(c.a * 255f));</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<a href="_color_extensions_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">MIT License</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">Copyright (c) 2020 Jeff Campbell</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">Permission is hereby granted, free of charge, to any person obtaining a copy</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">of this software and associated documentation files (the &quot;Software&quot;), to deal</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">in the Software without restriction, including without limitation the rights</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">copies of the Software, and to permit persons to whom the Software is</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">furnished to do so, subject to the following conditions:</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">The above copyright notice and this permission notice shall be included in</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">all copies or substantial portions of the Software.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">THE SOFTWARE.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_j_c_m_g_1_1_entitas_redux_1_1_editor.html">JCMG.EntitasRedux.Editor</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_color_extensions.html">   33</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_color_extensions.html">ColorExtensions</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">string</span> HEX_COLOR_RGBA_FORMAT = <span class="stringliteral">&quot;{0:X2}{1:X2}{2:X2}{3:X2}&quot;</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_color_extensions.html#a3d1b3ad1dd8a139163a5d2e8f69a6bca">   40</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_color_extensions.html#a3d1b3ad1dd8a139163a5d2e8f69a6bca">ToHexWithAlpha</a>(<span class="keyword">this</span> Color c)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">return</span> <span class="keywordtype">string</span>.Format(</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                HEX_COLOR_RGBA_FORMAT,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                (<span class="keywordtype">int</span>)(c.r * 255f),</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                (<span class="keywordtype">int</span>)(c.g * 255f),</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                (<span class="keywordtype">int</span>)(c.b * 255f),</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                (<span class="keywordtype">int</span>)(c.a * 255f));</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_color_extensions_html_a3d1b3ad1dd8a139163a5d2e8f69a6bca"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_color_extensions.html#a3d1b3ad1dd8a139163a5d2e8f69a6bca">JCMG.EntitasRedux.Editor.ColorExtensions.ToHexWithAlpha</a></div><div class="ttdeci">static string ToHexWithAlpha(this Color c)</div><div class="ttdoc">Returns the hex value of this color.</div><div class="ttdef"><b>Definition:</b> <a href="_color_extensions_8cs_source.html#l00015">ColorExtensions.cs:15</a></div></div>
-<div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_color_extensions_html"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_color_extensions.html">JCMG.EntitasRedux.Editor.ColorExtensions</a></div><div class="ttdoc">Extension methods for Color.</div><div class="ttdef"><b>Definition:</b> <a href="_color_extensions_8cs_source.html#l00008">ColorExtensions.cs:9</a></div></div>
+<div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_color_extensions_html_a3d1b3ad1dd8a139163a5d2e8f69a6bca"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_color_extensions.html#a3d1b3ad1dd8a139163a5d2e8f69a6bca">JCMG.EntitasRedux.Editor.ColorExtensions.ToHexWithAlpha</a></div><div class="ttdeci">static string ToHexWithAlpha(this Color c)</div><div class="ttdoc">Returns the hex value of this color.</div><div class="ttdef"><b>Definition:</b> <a href="_color_extensions_8cs_source.html#l00040">ColorExtensions.cs:40</a></div></div>
+<div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_color_extensions_html"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_color_extensions.html">JCMG.EntitasRedux.Editor.ColorExtensions</a></div><div class="ttdoc">Extension methods for Color.</div><div class="ttdef"><b>Definition:</b> <a href="_color_extensions_8cs_source.html#l00033">ColorExtensions.cs:34</a></div></div>
 <div class="ttc" id="anamespace_j_c_m_g_1_1_entitas_redux_1_1_editor_html"><div class="ttname"><a href="namespace_j_c_m_g_1_1_entitas_redux_1_1_editor.html">JCMG.EntitasRedux.Editor</a></div><div class="ttdef"><b>Definition:</b> <a href="_create_script_menu_items_8cs_source.html#l00028">CreateScriptMenuItems.cs:29</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

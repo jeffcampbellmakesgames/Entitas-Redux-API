@@ -1,6 +1,7 @@
 var dir_e5dc0c893ed083bcab286924b996bd9c =
 [
     [ "Extensions", "dir_d7de970a5481dd890812e035a5b62f71.html", "dir_d7de970a5481dd890812e035a5b62f71" ],
+    [ "Inspector", "dir_e25753dd0bb17fccdcb38342e66716d4.html", "dir_e25753dd0bb17fccdcb38342e66716d4" ],
     [ "Plugins", "dir_872edf5646e9d66f7f36e4e1a99d3b2a.html", "dir_872edf5646e9d66f7f36e4e1a99d3b2a" ],
     [ "Preferences", "dir_216925881db534db2628b527440da4ee.html", "dir_216925881db534db2628b527440da4ee" ],
     [ "Tools", "dir_2528f1bdd8b7b613ba143d510f2f2d82.html", "dir_2528f1bdd8b7b613ba143d510f2f2d82" ],

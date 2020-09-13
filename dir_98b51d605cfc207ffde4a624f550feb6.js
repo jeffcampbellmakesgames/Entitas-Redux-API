@@ -5,6 +5,9 @@ var dir_98b51d605cfc207ffde4a624f550feb6 =
     [ "Entity.cs", "_entity_8cs.html", [
       [ "Entity", "class_j_c_m_g_1_1_entitas_redux_1_1_entity.html", "class_j_c_m_g_1_1_entitas_redux_1_1_entity" ]
     ] ],
+    [ "EntityBehaviour.cs", "_entity_behaviour_8cs.html", [
+      [ "EntityBehaviour", "class_j_c_m_g_1_1_entitas_redux_1_1_entity_behaviour.html", "class_j_c_m_g_1_1_entitas_redux_1_1_entity_behaviour" ]
+    ] ],
     [ "EntityEqualityComparer.cs", "_entity_equality_comparer_8cs.html", [
       [ "EntityEqualityComparer", "class_j_c_m_g_1_1_entitas_redux_1_1_entity_equality_comparer.html", "class_j_c_m_g_1_1_entitas_redux_1_1_entity_equality_comparer" ]
     ] ],

@@ -11,11 +11,11 @@ var dir_1ed860ea7d25cf1e5b3a669ef7df86e8 =
     [ "ContextAttribute.cs", "_context_attribute_8cs.html", [
       [ "ContextAttribute", "class_j_c_m_g_1_1_entitas_redux_1_1_context_attribute.html", "class_j_c_m_g_1_1_entitas_redux_1_1_context_attribute" ]
     ] ],
-    [ "CustomComponentNameAttribute.cs", "_custom_component_name_attribute_8cs.html", [
-      [ "CustomComponentNameAttribute", "class_j_c_m_g_1_1_entitas_redux_1_1_custom_component_name_attribute.html", "class_j_c_m_g_1_1_entitas_redux_1_1_custom_component_name_attribute" ]
-    ] ],
     [ "CustomEntityIndexAttribute.cs", "_custom_entity_index_attribute_8cs.html", [
       [ "CustomEntityIndexAttribute", "class_j_c_m_g_1_1_entitas_redux_1_1_custom_entity_index_attribute.html", "class_j_c_m_g_1_1_entitas_redux_1_1_custom_entity_index_attribute" ]
+    ] ],
+    [ "DontDrawComponentAttribute.cs", "_dont_draw_component_attribute_8cs.html", [
+      [ "DontDrawComponentAttribute", "class_j_c_m_g_1_1_entitas_redux_1_1_dont_draw_component_attribute.html", null ]
     ] ],
     [ "DontGenerateAttribute.cs", "_dont_generate_attribute_8cs.html", [
       [ "DontGenerateAttribute", "class_j_c_m_g_1_1_entitas_redux_1_1_dont_generate_attribute.html", "class_j_c_m_g_1_1_entitas_redux_1_1_dont_generate_attribute" ]

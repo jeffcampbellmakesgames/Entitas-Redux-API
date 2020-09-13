@@ -111,53 +111,59 @@ $(document).ready(function(){initNavTree('_entity_link_inspector_8cs_source.html
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">using</span> System.Linq;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">using</span> UnityEditor;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_editor.html">JCMG.EntitasRedux.VisualDebugging.Editor</a></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    [CustomEditor(typeof(EntityLink))]</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">internal</span> sealed <span class="keyword">class </span>EntityLinkInspector : UnityEditor.Editor</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> OnInspectorGUI()</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            var link = (EntityLink)target;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">if</span> (link.Entity != <span class="keyword">null</span>)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keywordflow">if</span> (GUILayout.Button(<span class="stringliteral">&quot;Unlink&quot;</span>))</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    link.Unlink();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">if</span> (link.Entity != <span class="keyword">null</span>)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                EditorGUILayout.Space();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                EditorGUILayout.LabelField(link.Entity.ToString());</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordflow">if</span> (GUILayout.Button(<span class="stringliteral">&quot;Show entity&quot;</span>))</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    Selection.activeGameObject = FindObjectsOfType&lt;EntityBehaviour&gt;()</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        .Single(e =&gt; e.Entity == link.Entity)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        .gameObject;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                EditorGUILayout.Space();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                EntityDrawer.DrawEntity(link.Entity);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                EditorGUILayout.LabelField(<span class="stringliteral">&quot;Not linked to an entity&quot;</span>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_j_c_m_g.html">JCMG</a>.<a class="code" href="namespace_j_c_m_g_1_1_entitas_redux.html">EntitasRedux</a>.<a class="code" href="namespace_j_c_m_g_1_1_entitas_redux_1_1_editor.html">Editor</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">using</span> UnityEditor;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_editor.html">JCMG.EntitasRedux.VisualDebugging.Editor</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    [CustomEditor(typeof(EntityLink))]</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">internal</span> sealed <span class="keyword">class </span>EntityLinkInspector : UnityEditor.Editor</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> OnInspectorGUI()</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            var link = (EntityLink)target;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">if</span> (link.Entity != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordflow">if</span> (GUILayout.Button(<span class="stringliteral">&quot;Unlink&quot;</span>))</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                    link.Unlink();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">if</span> (link.Entity != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                EditorGUILayout.Space();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                EditorGUILayout.LabelField(link.Entity.ToString());</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">if</span> (GUILayout.Button(<span class="stringliteral">&quot;Show entity&quot;</span>))</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    Selection.activeGameObject = FindObjectsOfType&lt;EntityBehaviour&gt;()</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        .Single(e =&gt; e.Entity == link.Entity)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                        .gameObject;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                EditorGUILayout.Space();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_entity_drawer.html">EntityDrawer</a>.<a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_entity_drawer.html#ae81d19e6d41fc2c7ca922cf97b70dbb7">DrawEntity</a>(link.Entity);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                EditorGUILayout.LabelField(<span class="stringliteral">&quot;Not linked to an entity&quot;</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespace_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_editor_html"><div class="ttname"><a href="namespace_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_editor.html">JCMG.EntitasRedux.VisualDebugging.Editor</a></div><div class="ttdef"><b>Definition:</b> <a href="_context_observer_inspector_8cs_source.html#l00031">ContextObserverInspector.cs:32</a></div></div>
+<div class="ttc" id="anamespace_j_c_m_g_1_1_entitas_redux_html"><div class="ttname"><a href="namespace_j_c_m_g_1_1_entitas_redux.html">JCMG.EntitasRedux</a></div><div class="ttdef"><b>Definition:</b> <a href="_cleanup_attribute_8cs_source.html#l00028">CleanupAttribute.cs:29</a></div></div>
+<div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_entity_drawer_html_ae81d19e6d41fc2c7ca922cf97b70dbb7"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_entity_drawer.html#ae81d19e6d41fc2c7ca922cf97b70dbb7">JCMG.EntitasRedux.Editor.EntityDrawer.DrawEntity</a></div><div class="ttdeci">static void DrawEntity(IEntity entity)</div><div class="ttdef"><b>Definition:</b> <a href="_entity_drawer_8cs_source.html#l00205">EntityDrawer.cs:205</a></div></div>
+<div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_entity_drawer_html"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_entity_drawer.html">JCMG.EntitasRedux.Editor.EntityDrawer</a></div><div class="ttdef"><b>Definition:</b> <a href="_entity_drawer_8cs_source.html#l00039">EntityDrawer.cs:40</a></div></div>
+<div class="ttc" id="anamespace_j_c_m_g_1_1_entitas_redux_1_1_editor_html"><div class="ttname"><a href="namespace_j_c_m_g_1_1_entitas_redux_1_1_editor.html">JCMG.EntitasRedux.Editor</a></div><div class="ttdef"><b>Definition:</b> <a href="_create_script_menu_items_8cs_source.html#l00028">CreateScriptMenuItems.cs:29</a></div></div>
+<div class="ttc" id="anamespace_j_c_m_g_html"><div class="ttname"><a href="namespace_j_c_m_g.html">JCMG</a></div><div class="ttdef"><b>Definition:</b> <a href="_cleanup_attribute_8cs_source.html#l00028">CleanupAttribute.cs:29</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Entitas Redux: Unity/Assets/JCMG/EntitasRedux/Scripts/VisualDebugging/Entity/EntityBehaviour.cs Source File</title>
+<title>Entitas Redux: Unity/Assets/JCMG/EntitasRedux/Scripts/Entity/EntityBehaviour.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -113,14 +113,14 @@ $(document).ready(function(){initNavTree('_entity_behaviour_8cs_source.html','')
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging.html">JCMG.EntitasRedux.VisualDebugging</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_j_c_m_g_1_1_entitas_redux.html">JCMG.EntitasRedux</a></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    [ExecuteInEditMode]</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_entity_behaviour.html">   32</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_entity_behaviour.html">EntityBehaviour</a> : MonoBehaviour</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_entity_behaviour.html">   32</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_entity_behaviour.html">EntityBehaviour</a> : MonoBehaviour</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_entity_behaviour.html#a480afd94106a4c4d90530bf788c68e12">   34</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html">IContext</a> <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_context.html">Context</a> =&gt; _context;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_entity_behaviour.html#acb18ace869abc644249934a32d7e5739">   34</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html">IContext</a> <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_context.html">Context</a> =&gt; _context;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_entity_behaviour.html#a65f28e3141e2710dfa29ea25f9d4868e">   36</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="interface_j_c_m_g_1_1_entitas_redux_1_1_i_entity.html">IEntity</a> <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_entity.html">Entity</a> =&gt; _entity;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_entity_behaviour.html#a8ea540694107011328c92d4c842a363a">   36</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="interface_j_c_m_g_1_1_entitas_redux_1_1_i_entity.html">IEntity</a> <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_entity.html">Entity</a> =&gt; _entity;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">string</span> _cachedName;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('_entity_behaviour_8cs_source.html','')
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">private</span> <a class="code" href="interface_j_c_m_g_1_1_entitas_redux_1_1_i_entity.html">IEntity</a> _entity;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">private</span> Stack&lt;EntityBehaviour&gt; _entityBehaviourPool;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_entity_behaviour.html#a02506c0bd99bd9f132c0e8efc5c60f3a">   44</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_entity_behaviour.html#a02506c0bd99bd9f132c0e8efc5c60f3a">Init</a>(<a class="code" href="interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html">IContext</a> context, <a class="code" href="interface_j_c_m_g_1_1_entitas_redux_1_1_i_entity.html">IEntity</a> entity, Stack&lt;EntityBehaviour&gt; entityBehaviourPool)</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_entity_behaviour.html#aa5d5ecb15b9765bf325221d250669f4e">   44</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_entity_behaviour.html#aa5d5ecb15b9765bf325221d250669f4e">Init</a>(<a class="code" href="interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html">IContext</a> context, <a class="code" href="interface_j_c_m_g_1_1_entitas_redux_1_1_i_entity.html">IEntity</a> entity, Stack&lt;EntityBehaviour&gt; entityBehaviourPool)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            _context = context;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            _entity = entity;</div>
@@ -151,35 +151,36 @@ $(document).ready(function(){initNavTree('_entity_behaviour_8cs_source.html','')
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> Update()</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">if</span> (_entity != <span class="keyword">null</span> &amp;&amp; _cachedName != _entity.ToString())</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                name = _cachedName = _entity.ToString();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> OnDestroy()</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">if</span> (_entity != <span class="keyword">null</span>)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                _entity.<a class="code" href="interface_j_c_m_g_1_1_entitas_redux_1_1_i_entity.html#a668a805cab43a39ada43ee70daa2a384">OnEntityReleased</a> -= OnEntityReleased;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="comment">// TODO Remove or refactor this as Name is expensive</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">if</span> (_entity != <span class="keyword">null</span> &amp;&amp; _cachedName != _entity.ToString())</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                name = _cachedName = _entity.ToString();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> OnDestroy()</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">if</span> (_entity != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                _entity.<a class="code" href="interface_j_c_m_g_1_1_entitas_redux_1_1_i_entity.html#a668a805cab43a39ada43ee70daa2a384">OnEntityReleased</a> -= OnEntityReleased;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="ainterface_j_c_m_g_1_1_entitas_redux_1_1_i_context_html"><div class="ttname"><a href="interface_j_c_m_g_1_1_entitas_redux_1_1_i_context.html">JCMG.EntitasRedux.IContext</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_context_8cs_source.html#l00030">IContext.cs:31</a></div></div>
 <div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_entity_html"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_entity.html">JCMG.EntitasRedux.Entity</a></div><div class="ttdoc">Use context.CreateEntity() to create a new entity and entity.Destroy() to destroy it....</div><div class="ttdef"><b>Definition:</b> <a href="_entity_8cs_source.html#l00037">Entity.cs:38</a></div></div>
-<div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_entity_behaviour_html"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_entity_behaviour.html">JCMG.EntitasRedux.VisualDebugging.EntityBehaviour</a></div><div class="ttdef"><b>Definition:</b> <a href="_entity_behaviour_8cs_source.html#l00032">EntityBehaviour.cs:33</a></div></div>
+<div class="ttc" id="anamespace_j_c_m_g_1_1_entitas_redux_html"><div class="ttname"><a href="namespace_j_c_m_g_1_1_entitas_redux.html">JCMG.EntitasRedux</a></div><div class="ttdef"><b>Definition:</b> <a href="_cleanup_attribute_8cs_source.html#l00028">CleanupAttribute.cs:29</a></div></div>
 <div class="ttc" id="ainterface_j_c_m_g_1_1_entitas_redux_1_1_i_entity_html_a668a805cab43a39ada43ee70daa2a384"><div class="ttname"><a href="interface_j_c_m_g_1_1_entitas_redux_1_1_i_entity.html#a668a805cab43a39ada43ee70daa2a384">JCMG.EntitasRedux.IEntity.OnEntityReleased</a></div><div class="ttdeci">EntityEvent OnEntityReleased</div><div class="ttdef"><b>Definition:</b> <a href="_i_entity_8cs_source.html#l00044">IEntity.cs:44</a></div></div>
+<div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_entity_behaviour_html"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_entity_behaviour.html">JCMG.EntitasRedux.EntityBehaviour</a></div><div class="ttdef"><b>Definition:</b> <a href="_entity_behaviour_8cs_source.html#l00032">EntityBehaviour.cs:33</a></div></div>
 <div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_context_html"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_context.html">JCMG.EntitasRedux.Context</a></div><div class="ttdoc">A context manages the lifecycle of entities and groups. You can create and destroy entities and get g...</div><div class="ttdef"><b>Definition:</b> <a href="_context_8cs_source.html#l00039">Context.cs:41</a></div></div>
-<div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_entity_behaviour_html_a02506c0bd99bd9f132c0e8efc5c60f3a"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_entity_behaviour.html#a02506c0bd99bd9f132c0e8efc5c60f3a">JCMG.EntitasRedux.VisualDebugging.EntityBehaviour.Init</a></div><div class="ttdeci">void Init(IContext context, IEntity entity, Stack&lt; EntityBehaviour &gt; entityBehaviourPool)</div><div class="ttdef"><b>Definition:</b> <a href="_entity_behaviour_8cs_source.html#l00044">EntityBehaviour.cs:44</a></div></div>
+<div class="ttc" id="aclass_j_c_m_g_1_1_entitas_redux_1_1_entity_behaviour_html_aa5d5ecb15b9765bf325221d250669f4e"><div class="ttname"><a href="class_j_c_m_g_1_1_entitas_redux_1_1_entity_behaviour.html#aa5d5ecb15b9765bf325221d250669f4e">JCMG.EntitasRedux.EntityBehaviour.Init</a></div><div class="ttdeci">void Init(IContext context, IEntity entity, Stack&lt; EntityBehaviour &gt; entityBehaviourPool)</div><div class="ttdef"><b>Definition:</b> <a href="_entity_behaviour_8cs_source.html#l00044">EntityBehaviour.cs:44</a></div></div>
 <div class="ttc" id="ainterface_j_c_m_g_1_1_entitas_redux_1_1_i_entity_html"><div class="ttname"><a href="interface_j_c_m_g_1_1_entitas_redux_1_1_i_entity.html">JCMG.EntitasRedux.IEntity</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_entity_8cs_source.html#l00031">IEntity.cs:32</a></div></div>
-<div class="ttc" id="anamespace_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_html"><div class="ttname"><a href="namespace_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging.html">JCMG.EntitasRedux.VisualDebugging</a></div><div class="ttdef"><b>Definition:</b> <a href="_context_observer_8cs_source.html#l00030">ContextObserver.cs:31</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_b4253589a4da4676661007ca7920c7c2.html">JCMG</a></li><li class="navelem"><a class="el" href="dir_83f9266e9c4fbbdc3019e1548d6f3c9a.html">EntitasRedux</a></li><li class="navelem"><a class="el" href="dir_d8ea6fb90a644d59812c93e9006449e9.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_8f55a7daa02a0f7b2e6ba1d607ef41d4.html">VisualDebugging</a></li><li class="navelem"><a class="el" href="dir_687a175751c257c8b0e416579561387b.html">Entity</a></li><li class="navelem"><a class="el" href="_entity_behaviour_8cs.html">EntityBehaviour.cs</a></li>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_b4253589a4da4676661007ca7920c7c2.html">JCMG</a></li><li class="navelem"><a class="el" href="dir_83f9266e9c4fbbdc3019e1548d6f3c9a.html">EntitasRedux</a></li><li class="navelem"><a class="el" href="dir_d8ea6fb90a644d59812c93e9006449e9.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_98b51d605cfc207ffde4a624f550feb6.html">Entity</a></li><li class="navelem"><a class="el" href="_entity_behaviour_8cs.html">EntityBehaviour.cs</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>

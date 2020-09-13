@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('_entity_index_data_provider_8cs_source
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                        method.ReturnType.ToCompilableString(),</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                        method.Name,</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                        method.GetParameters()</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                            .Select(p =&gt; <span class="keyword">new</span> MemberData(p.ParameterType.ToCompilableString(), p.Name))</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                            .Select(p =&gt; <span class="keyword">new</span> MemberData(p.ParameterType, p.Name))</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                            .ToArray()))</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                .ToArray();</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>

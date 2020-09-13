@@ -15,7 +15,7 @@ var dir_1ded3ecf0f3828fa1852583f4010b23b =
     [ "SingleEntityException.cs", "_single_entity_exception_8cs.html", [
       [ "SingleEntityException", "class_j_c_m_g_1_1_entitas_redux_1_1_single_entity_exception.html", "class_j_c_m_g_1_1_entitas_redux_1_1_single_entity_exception" ]
     ] ],
-    [ "TypeExtensions.cs", "_type_extensions_8cs.html", [
+    [ "TypeExtensions.cs", "_extensions_2_type_extensions_8cs.html", [
       [ "TypeExtensions", "class_j_c_m_g_1_1_entitas_redux_1_1_type_extensions.html", "class_j_c_m_g_1_1_entitas_redux_1_1_type_extensions" ]
     ] ]
 ];

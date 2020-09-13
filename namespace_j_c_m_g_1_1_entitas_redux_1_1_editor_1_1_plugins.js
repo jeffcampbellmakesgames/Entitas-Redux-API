@@ -14,7 +14,9 @@ var namespace_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins =
     [ "EventData", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_event_data.html", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_event_data" ],
     [ "EventEntityApiGenerator", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_event_entity_api_generator.html", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_event_entity_api_generator" ],
     [ "MemberData", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_member_data.html", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_member_data" ],
+    [ "MemberDataExtensions", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_member_data_extensions.html", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_member_data_extensions" ],
     [ "MethodData", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_method_data.html", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_method_data" ],
     [ "TemplatesConfig", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_templates_config.html", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_templates_config" ],
-    [ "TemplatesConfigExtension", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_templates_config_extension.html", null ]
+    [ "TemplatesConfigExtension", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_templates_config_extension.html", null ],
+    [ "TypeExtensions", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_type_extensions.html", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_type_extensions" ]
 ];
