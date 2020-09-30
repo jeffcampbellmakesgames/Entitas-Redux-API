@@ -68,6 +68,7 @@ var hierarchy =
         [ "JCMG.EntitasRedux.EntityIsNotEnabledException", "class_j_c_m_g_1_1_entitas_redux_1_1_entity_is_not_enabled_exception.html", null ],
         [ "JCMG.EntitasRedux.EntityIsNotRetainedByOwnerException", "class_j_c_m_g_1_1_entitas_redux_1_1_entity_is_not_retained_by_owner_exception.html", null ],
         [ "JCMG.EntitasRedux.GroupSingleEntityException< TEntity >", "class_j_c_m_g_1_1_entitas_redux_1_1_group_single_entity_exception.html", null ],
+        [ "JCMG.EntitasRedux.IndexOutOfLookupRangeException", "class_j_c_m_g_1_1_entitas_redux_1_1_index_out_of_lookup_range_exception.html", null ],
         [ "JCMG.EntitasRedux.SingleEntityException", "class_j_c_m_g_1_1_entitas_redux_1_1_single_entity_exception.html", null ]
       ] ],
       [ "JCMG.EntitasRedux.MatcherException", "class_j_c_m_g_1_1_entitas_redux_1_1_matcher_exception.html", null ]
@@ -197,8 +198,8 @@ var hierarchy =
       [ "JCMG.EntitasRedux.VisualDebugging.ContextObserverBehaviour", "class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_context_observer_behaviour.html", null ],
       [ "JCMG.EntitasRedux.VisualDebugging.DebugSystemsBehaviour", "class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_debug_systems_behaviour.html", null ]
     ] ],
+    [ "JCMG.EntitasRedux.Editor.PlayerSettingsTools", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_player_settings_tools.html", null ],
     [ "JCMG.EntitasRedux.Editor.PreferenceTools", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_preference_tools.html", null ],
-    [ "JCMG.EntitasRedux.PublicMemberInfoEntityExtension", "class_j_c_m_g_1_1_entitas_redux_1_1_public_member_info_entity_extension.html", null ],
     [ "JCMG.EntitasRedux.RuntimeConstants", "class_j_c_m_g_1_1_entitas_redux_1_1_runtime_constants.html", null ],
     [ "ScriptableObject", null, [
       [ "JCMG.EntitasRedux.Blueprints.BlueprintBase", "class_j_c_m_g_1_1_entitas_redux_1_1_blueprints_1_1_blueprint_base.html", null ]

@@ -7,6 +7,7 @@ var dir_d8ea6fb90a644d59812c93e9006449e9 =
     [ "Editor", "dir_e5dc0c893ed083bcab286924b996bd9c.html", "dir_e5dc0c893ed083bcab286924b996bd9c" ],
     [ "Entity", "dir_98b51d605cfc207ffde4a624f550feb6.html", "dir_98b51d605cfc207ffde4a624f550feb6" ],
     [ "EntityIndex", "dir_fda7cfad61bdffa3f721698cd9c72dd0.html", "dir_fda7cfad61bdffa3f721698cd9c72dd0" ],
+    [ "Exceptions", "dir_ad1543ceec00ea4b7341dad214127284.html", "dir_ad1543ceec00ea4b7341dad214127284" ],
     [ "Extensions", "dir_1ded3ecf0f3828fa1852583f4010b23b.html", "dir_1ded3ecf0f3828fa1852583f4010b23b" ],
     [ "Group", "dir_14e92b9b20d59f80b908d75278d0db66.html", "dir_14e92b9b20d59f80b908d75278d0db66" ],
     [ "Matcher", "dir_e500b0be27dccf0a96c37fd2df94d03f.html", "dir_e500b0be27dccf0a96c37fd2df94d03f" ],

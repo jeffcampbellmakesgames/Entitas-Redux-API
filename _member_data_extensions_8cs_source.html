@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Entitas Redux: Unity/Assets/JCMG/EntitasRedux/Scripts/Editor/Plugins/Extensions/MemberDataExtensions.cs Source File</title>
+<title>Entitas Redux: D:/Bitbucket/Entitas-Redux/Unity/Assets/JCMG/EntitasRedux/Scripts/Editor/Plugins/Extensions/MemberDataExtensions.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -119,37 +119,37 @@ $(document).ready(function(){initNavTree('_member_data_extensions_8cs_source.htm
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="comment">// Code templates</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">string</span> MEMBER_ASSIGNMENT</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            = <span class="stringliteral">&quot;        component.${MemberName} = new${MemberNameUpper};&quot;</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            = <span class="stringliteral">&quot;     component.${MemberName} = new${MemberNameUpper};&quot;</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">string</span> DEFAULT_MEMBER_COPY_ASSIGNMENT</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            = <span class="stringliteral">&quot;        component.${MemberName} = copyComponent.${MemberName};&quot;</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            = <span class="stringliteral">&quot;     component.${MemberName} = copyComponent.${MemberName};&quot;</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">string</span> MEMBER_CLONE_ASSIGNMENT</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            = <span class="stringliteral">&quot;        component.${MemberName} = (${MemberCompilableString})copyComponent.${MemberName}.Clone();&quot;</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            = <span class="stringliteral">&quot;     component.${MemberName} = (${MemberCompilableString})copyComponent.${MemberName}.Clone();&quot;</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">string</span> LIST_MEMBER_DEEP_COPY_ASSIGNMENT</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            = <span class="stringliteral">&quot;        component.${MemberName} = (${MemberCompilableString})JCMG.EntitasRedux.ListTools.DeepCopy(copyComponent.${MemberName});&quot;</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            = <span class="stringliteral">&quot;     component.${MemberName} = (${MemberCompilableString})JCMG.EntitasRedux.ListTools.DeepCopy(copyComponent.${MemberName});&quot;</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">string</span> LIST_MEMBER_SHALLOW_COPY_ASSIGNMENT</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            = <span class="stringliteral">&quot;        component.${MemberName} = (${MemberCompilableString})JCMG.EntitasRedux.ListTools.ShallowCopy(copyComponent.${MemberName});&quot;</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            = <span class="stringliteral">&quot;     component.${MemberName} = (${MemberCompilableString})JCMG.EntitasRedux.ListTools.ShallowCopy(copyComponent.${MemberName});&quot;</span>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">string</span> DICTIONARY_MEMBER_SHALLOW_COPY_ASSIGNMENT</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            = <span class="stringliteral">&quot;        component.${MemberName} = (${MemberCompilableString})JCMG.EntitasRedux.DictionaryTools.ShallowCopy(copyComponent.${MemberName});&quot;</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            = <span class="stringliteral">&quot;     component.${MemberName} = (${MemberCompilableString})JCMG.EntitasRedux.DictionaryTools.ShallowCopy(copyComponent.${MemberName});&quot;</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">string</span> DICTIONARY_MEMBER_DEEP_COPY_ASSIGNMENT</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            = <span class="stringliteral">&quot;        component.${MemberName} = (${MemberCompilableString})JCMG.EntitasRedux.DictionaryTools.DeepCopy(copyComponent.${MemberName});&quot;</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            = <span class="stringliteral">&quot;     component.${MemberName} = (${MemberCompilableString})JCMG.EntitasRedux.DictionaryTools.DeepCopy(copyComponent.${MemberName});&quot;</span>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">string</span> DICTIONARY_MEMBER_LIST_DEEP_COPY_ASSIGNMENT</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            = <span class="stringliteral">&quot;        component.${MemberName} = (${MemberCompilableString})JCMG.EntitasRedux.DictionaryTools.DeepCopyListValue(copyComponent.${MemberName});&quot;</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            = <span class="stringliteral">&quot;     component.${MemberName} = (${MemberCompilableString})JCMG.EntitasRedux.DictionaryTools.DeepCopyListValue(copyComponent.${MemberName});&quot;</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">string</span> DICTIONARY_MEMBER_ARRAY_DEEP_COPY_ASSIGNMENT</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            = <span class="stringliteral">&quot;        component.${MemberName} = (${MemberCompilableString})JCMG.EntitasRedux.DictionaryTools.DeepCopyArrayValue(copyComponent.${MemberName});&quot;</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            = <span class="stringliteral">&quot;     component.${MemberName} = (${MemberCompilableString})JCMG.EntitasRedux.DictionaryTools.DeepCopyArrayValue(copyComponent.${MemberName});&quot;</span>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">string</span> ARRAY_MEMBER_DEEP_COPY_ASSIGNMENT</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            = <span class="stringliteral">&quot;        component.${MemberName} = (${MemberCompilableString})JCMG.EntitasRedux.ArrayTools.DeepCopy(copyComponent.${MemberName});&quot;</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            = <span class="stringliteral">&quot;     component.${MemberName} = (${MemberCompilableString})JCMG.EntitasRedux.ArrayTools.DeepCopy(copyComponent.${MemberName});&quot;</span>;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">string</span> ARRAY_MEMBER_SHALLOW_COPY_ASSIGNMENT</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            = <span class="stringliteral">&quot;        component.${MemberName} = (${MemberCompilableString})copyComponent.${MemberName}.Clone();&quot;</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            = <span class="stringliteral">&quot;     component.${MemberName} = (${MemberCompilableString})copyComponent.${MemberName}.Clone();&quot;</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_member_data_extensions.html#af4e648fdef33418d52f2827f2e62853e">   73</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_member_data_extensions.html#af4e648fdef33418d52f2827f2e62853e">GetMemberAssignment</a>(<span class="keyword">this</span> <a class="code" href="class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_member_data.html">MemberData</a> memberData)</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {</div>

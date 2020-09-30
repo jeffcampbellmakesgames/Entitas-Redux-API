@@ -28,6 +28,7 @@ var namespace_j_c_m_g_1_1_entitas_redux_1_1_editor =
     [ "IntTypeDrawer", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_int_type_drawer.html", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_int_type_drawer" ],
     [ "ITypeDrawer", "interface_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_i_type_drawer.html", "interface_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_i_type_drawer" ],
     [ "ListTypeDrawer", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_list_type_drawer.html", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_list_type_drawer" ],
+    [ "PlayerSettingsTools", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_player_settings_tools.html", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_player_settings_tools" ],
     [ "PreferenceTools", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_preference_tools.html", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_preference_tools" ],
     [ "RectTypeDrawer", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_rect_type_drawer.html", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_rect_type_drawer" ],
     [ "ScriptTools", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_script_tools.html", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_script_tools" ],

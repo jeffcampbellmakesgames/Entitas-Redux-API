@@ -58,11 +58,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_about_window_8cs.html",
-"_entity_is_not_retained_by_owner_exception_8cs_source.html",
-"class_j_c_m_g_1_1_entitas_redux_1_1_array_tools.html#af8929d7b192b1782277d8d49e493ce45",
-"class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_entity_index_data_extension.html#ac67e00d5ac92c4028326daf7f7e60f2c",
-"class_j_c_m_g_1_1_entitas_redux_1_1_systems.html#a73d830a8649bb44dabc7c1379b0142ed",
-"interface_j_c_m_g_1_1_entitas_redux_1_1_i_a_e_r_c.html"
+"_entity_is_not_destroyed_exception_8cs_source.html",
+"class_j_c_m_g_1_1_entitas_redux_1_1_abstract_entity_index_attribute.html",
+"class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_plugins_1_1_entity_index_data_extension.html#a5e5a2556a994738f1477f7f4a76a3029",
+"class_j_c_m_g_1_1_entitas_redux_1_1_safe_a_e_r_c.html#a11021b2b51e20102aefd6b991a62bc14",
+"interface_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_i_abstract_user_preferences_drawer.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
