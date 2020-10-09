@@ -11,5 +11,8 @@ var dir_e5dc0c893ed083bcab286924b996bd9c =
     [ "EntitasReduxStyles.cs", "_entitas_redux_styles_8cs.html", [
       [ "EntitasReduxStyles", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_entitas_redux_styles.html", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_entitas_redux_styles" ]
     ] ],
-    [ "MenuItems.cs", "_menu_items_8cs.html", null ]
+    [ "MenuItems.cs", "_menu_items_8cs.html", null ],
+    [ "PlayModeHelper.cs", "_play_mode_helper_8cs.html", [
+      [ "PlayModeHelper", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_play_mode_helper.html", null ]
+    ] ]
 ];

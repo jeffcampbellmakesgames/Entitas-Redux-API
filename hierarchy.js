@@ -199,6 +199,7 @@ var hierarchy =
       [ "JCMG.EntitasRedux.VisualDebugging.DebugSystemsBehaviour", "class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_debug_systems_behaviour.html", null ]
     ] ],
     [ "JCMG.EntitasRedux.Editor.PlayerSettingsTools", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_player_settings_tools.html", null ],
+    [ "JCMG.EntitasRedux.Editor.PlayModeHelper", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_play_mode_helper.html", null ],
     [ "JCMG.EntitasRedux.Editor.PreferenceTools", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_preference_tools.html", null ],
     [ "JCMG.EntitasRedux.RuntimeConstants", "class_j_c_m_g_1_1_entitas_redux_1_1_runtime_constants.html", null ],
     [ "ScriptableObject", null, [

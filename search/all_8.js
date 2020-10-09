@@ -10,7 +10,7 @@ var searchData=
   ['ianyofmatcher_2ecs_435',['IAnyOfMatcher.cs',['../_i_any_of_matcher_8cs.html',1,'']]],
   ['icleanupsystem_436',['ICleanupSystem',['../interface_j_c_m_g_1_1_entitas_redux_1_1_i_cleanup_system.html',1,'JCMG::EntitasRedux']]],
   ['icleanupsystem_2ecs_437',['ICleanupSystem.cs',['../_i_cleanup_system_8cs.html',1,'']]],
-  ['icollector_438',['ICollector',['../interface_j_c_m_g_1_1_entitas_redux_1_1_i_collector.html',1,'JCMG.EntitasRedux.ICollector'],['../interface_j_c_m_g_1_1_entitas_redux_1_1_i_collector.html',1,'JCMG.EntitasRedux.ICollector&lt; TEntity &gt;']]],
+  ['icollector_438',['ICollector',['../interface_j_c_m_g_1_1_entitas_redux_1_1_i_collector.html',1,'JCMG.EntitasRedux.ICollector&lt; TEntity &gt;'],['../interface_j_c_m_g_1_1_entitas_redux_1_1_i_collector.html',1,'JCMG.EntitasRedux.ICollector']]],
   ['icollector_2ecs_439',['ICollector.cs',['../_i_collector_8cs.html',1,'']]],
   ['icollector_3c_20tentity_20_3e_440',['ICollector&lt; TEntity &gt;',['../interface_j_c_m_g_1_1_entitas_redux_1_1_i_collector.html',1,'JCMG::EntitasRedux']]],
   ['icomponent_441',['IComponent',['../interface_j_c_m_g_1_1_entitas_redux_1_1_i_component.html',1,'JCMG::EntitasRedux']]],

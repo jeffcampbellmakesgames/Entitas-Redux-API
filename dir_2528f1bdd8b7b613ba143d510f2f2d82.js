@@ -12,6 +12,7 @@ var dir_2528f1bdd8b7b613ba143d510f2f2d82 =
     [ "PreferenceTools.cs", "_preference_tools_8cs.html", [
       [ "PreferenceTools", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_preference_tools.html", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_preference_tools" ]
     ] ],
+    [ "RefactorModeTools.cs", "_refactor_mode_tools_8cs.html", null ],
     [ "ScriptTools.cs", "_script_tools_8cs.html", [
       [ "ScriptTools", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_script_tools.html", "class_j_c_m_g_1_1_entitas_redux_1_1_editor_1_1_script_tools" ]
     ] ]
