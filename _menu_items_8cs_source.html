@@ -126,17 +126,17 @@ $(document).ready(function(){initNavTree('_menu_items_8cs_source.html',''); init
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">        #if !ENTITAS_REDUX_NO_IMPL</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        [MenuItem(<span class="stringliteral">&quot;Tools/JCMG/EntitasRedux/Enable Refactor Mode #%r&quot;</span>)]</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">internal</span> <span class="keyword">static</span> <span class="keywordtype">void</span> DisableRefactorMode()</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">internal</span> <span class="keyword">static</span> <span class="keywordtype">void</span> EnableRefactorMode()</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            RefactorModeTools.DisableRefactorMode();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            RefactorModeTools.EnableRefactorMode();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">        #else</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        [MenuItem(<span class="stringliteral">&quot;Tools/JCMG/EntitasRedux/Disable Refactor Mode #%r&quot;</span>)]</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">internal</span> <span class="keyword">static</span> <span class="keywordtype">void</span> EnableRefactorMode()</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">internal</span> <span class="keyword">static</span> <span class="keywordtype">void</span> DisableRefactorMode()</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            RefactorModeTools.EnableRefactorMode();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            RefactorModeTools.DisableRefactorMode();</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">        #endif</span></div>
