@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['matcher_1443',['matcher',['../struct_j_c_m_g_1_1_entitas_redux_1_1_trigger_on_event.html#a43758e72e2d18267c0ee2776503200d9',1,'JCMG.EntitasRedux.TriggerOnEvent.matcher()'],['../class_j_c_m_g_1_1_entitas_redux_1_1_group.html#a2ff3d0429e8cb58fc09b02e41b4bc55c',1,'JCMG.EntitasRedux.Group.Matcher()']]],
+  ['matcher_1443',['Matcher',['../class_j_c_m_g_1_1_entitas_redux_1_1_group.html#a2ff3d0429e8cb58fc09b02e41b4bc55c',1,'JCMG.EntitasRedux.Group.Matcher()'],['../struct_j_c_m_g_1_1_entitas_redux_1_1_trigger_on_event.html#a43758e72e2d18267c0ee2776503200d9',1,'JCMG.EntitasRedux.TriggerOnEvent.matcher()']]],
   ['matcher_5fsuffix_1444',['MATCHER_SUFFIX',['../class_j_c_m_g_1_1_entitas_redux_1_1_entitas_string_extension.html#ad8358fd673bb21e489e5d30687265486',1,'JCMG::EntitasRedux::EntitasStringExtension']]],
   ['maxcleanupduration_1445',['MaxCleanupDuration',['../class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_system_info.html#a041b63f8bb7fb4ed332c0c42c519e673',1,'JCMG::EntitasRedux::VisualDebugging::SystemInfo']]],
   ['maxfixedupdateduration_1446',['MaxFixedUpdateDuration',['../class_j_c_m_g_1_1_entitas_redux_1_1_visual_debugging_1_1_system_info.html#a772f1137a1ff58dea1e4883684f981bf',1,'JCMG::EntitasRedux::VisualDebugging::SystemInfo']]],
